@@ -42,7 +42,6 @@ func TestFourItemArray(t *testing.T) {
 }
 
 func AssertFind(t *testing.T, expected int, key int, ints []int) {
-	result, err := chop(key, ints)
-	assert.Nil(t, err)
+	result := Chop(key, ints)
 	assert.Equal(t, expected, result)
 }
