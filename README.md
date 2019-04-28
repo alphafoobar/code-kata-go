@@ -1,8 +1,9 @@
 # CodeKata - go-lang
 
 ## Clone
-
+```bash
 go get github.com/alphafoobar/code-kata-go
+```
 
 ## Run Tests
 ```bash
