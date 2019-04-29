@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/alphafoobar/code-kata-go.svg?branch=master)](https://travis-ci.com/alphafoobar/code-kata-go)
+
 # CodeKata - go-lang
 
 ## Clone
