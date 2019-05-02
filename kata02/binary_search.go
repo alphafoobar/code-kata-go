@@ -7,8 +7,8 @@ func min(x, y int) int {
 	return y
 }
 
-func calculateMid(offset, length, remaining int) int {
-	return min(length-1-offset, remaining/2)
+func calculateMid(remaining int) int {
+	return min(remaining-1, remaining/2)
 }
 
 func foundIndex(key int, array []int, offset int) int {
@@ -28,7 +28,7 @@ func chop(key int, array []int, offset, length int) int {
 		return foundIndex(key, array, offset)
 	}
 
-	midPoint := calculateMid(offset, length, remaining)
+	midPoint := calculateMid(remaining)
 
 	point := offset + midPoint
 	if array[point] == key {
