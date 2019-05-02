@@ -37,7 +37,7 @@ func chop(key int, array []int, offset, length int) int {
 	if array[point] > key {
 		return chop(key, array, offset, point)
 	}
-	return chop(key, array, point, length)
+	return chop(key, array, point+1, length)
 }
 
 func Chop(key int, array []int) int {
